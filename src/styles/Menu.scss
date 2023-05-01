@@ -1,0 +1,120 @@
+.menu-section {
+  /* width: 100%; */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* margin-top: 500px; */
+  top: 50px;
+  left: 0px;
+  right: 0px;
+  padding: 0 20px;
+  background-color: white;
+}
+
+.menu-section .container-close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-section .container-close .icon-close {
+  font-size: var(--lg);
+  font-weight: bold;
+  color: var(--very-light-pink);
+}
+
+.menu-section .menu-left,
+.menu-account {
+  list-style: none;
+  font-size: var(--md);
+  font-weight: bold;
+  line-height: var(--lg);
+  color: var(--black);
+}
+
+.menu-section .container-categories .menu-left {
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--very-light-pink);
+}
+
+.menu-section .item-menu,
+.item-account {
+  margin-bottom: 32px;
+}
+
+.menu-section .container-account {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*display: none;*/
+}
+
+.menu-section .container-access-login {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  display: none;
+}
+
+.menu-section .container-account .container-signout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.menu-section .container-account .container-signout p {
+  padding-bottom: 4px;
+  font-size: var(--sm);
+  font-weight: 300;
+  line-height: var(--lg);
+}
+
+.login,
+.signout {
+  text-decoration: none;
+  font-size: var(--md);
+  font-weight: bold;
+  line-height: var(--lg);
+  color: var(--hospital-green);
+}
+
+@media (min-width: 800px) {
+  .menu-section {
+    align-items: flex-end;
+    /* margin-top: 245px; */
+    top: 50px;
+    right: 40px;
+    background-color: transparent;
+  }
+
+  .menu-section .container-close,
+  .container-categories,
+  .container-access-login {
+    display: none;
+  }
+
+  .menu-section .container-account {
+    width: 150px;
+    height: 190px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.119789);
+    text-align: end;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .menu-section .container-account .menu-account {
+    margin-top: 12px;
+    border-bottom: 2px solid var(--very-light-pink);
+  }
+
+  .menu-section .container-account .container-signout {
+    justify-content: center;
+  }
+
+  .menu-section .container-account .container-signout p {
+    display: none;
+  }
+}

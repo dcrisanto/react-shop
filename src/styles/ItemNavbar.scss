@@ -1,0 +1,16 @@
+.item {
+  margin-right: 20px;
+  padding: 8px;
+  font-size: var(--sm);
+  font-weight: bold;
+  line-height: 2rem;
+  text-decoration: none;
+  color: var(--very-light-pink);
+}
+
+.item:hover {
+  border: 1px solid var(--hospital-green);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--hospital-green);
+}

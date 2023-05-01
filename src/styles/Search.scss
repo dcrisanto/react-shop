@@ -1,0 +1,21 @@
+.search-secction {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-secction .input {
+  width: 300px;
+  height: 44px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: var(--very-light-pink);
+  background-color: var(--background-input-field);
+}
+
+@media (min-width: 800px) {
+  /* .search-secction {
+    width: 339px;
+  } */
+}

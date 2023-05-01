@@ -1,0 +1,82 @@
+@import "vars";
+
+header {
+  height: 50px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+}
+
+nav .nav-right-secction .nav-account-card {
+  list-style: none;
+}
+
+nav .nav-right-secction .nav-account-card .item-sign-in,
+.item-email {
+  display: none;
+}
+
+header nav .nav-right-secction .nav-account-card .item-cart{
+    cursor: pointer;
+  }
+
+nav .nav-right-secction .nav-account-card .item-cart div {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: var(--hospital-green);
+    text-align: center;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  /* border-bottom: 1px solid var(--very-light-pink); */
+}
+
+@media (min-width: 800px) {
+  header nav .icon-menu {
+    display: none;
+  }
+
+  header nav .nav-right-secction .nav-account-card .item-sign-in,
+  .item-email {
+    display: inline-block;
+  }
+
+  header nav .nav-left-secction {
+    display: flex;
+  }
+
+  /* header nav .nav-right-secction .nav-account-card {
+    display: flex;
+  } */
+
+  header nav,
+  .nav-account-card {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  header nav .nav-right-secction .nav-account-card .item-sign-in,
+  .item-email {
+    margin-right: 24px;
+    font-size: var(--sm);
+    font-weight: bold;
+    line-height: var(--lg);
+    color: var(--hospital-green);
+    cursor: pointer;
+  }
+
+  header nav .nav-right-secction .nav-account-card {
+    align-items: center;
+  }
+}

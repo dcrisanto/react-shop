@@ -1,0 +1,12 @@
+.list-categories {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .list-categories {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    list-style: none;
+  }
+}
