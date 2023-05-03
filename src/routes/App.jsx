@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HasRouter, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Login from '../pages/Login';
 import RecoveryPassword from '../pages/RecoveryPassword';
@@ -21,7 +21,7 @@ const App = () => {
         <AppContext.Provider value={initialState}>
             <BrowserRouter>
                 <Layout>
-                    <Routes>
+                    <HasRouter>
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/login" element={<Login />} />                        
                         <Route exaxt path="/recovery-password" element={<RecoveryPassword />} />
