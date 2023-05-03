@@ -11,7 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     //nombre al empaquetado que se creará
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: './'
   },
   //entensiones
   resolve: {
@@ -71,7 +71,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'public'),
       watch: true,
     },
     watchFiles: path.join(__dirname, "./**"), //observa los cambios en todos nuestros archivos y actualiza el navegador
