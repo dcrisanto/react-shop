@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, HasRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Routea, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Login from '../pages/Login';
 import RecoveryPassword from '../pages/RecoveryPassword';
