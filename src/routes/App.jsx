@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HasRouter, Routes, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Login from '../pages/Login';
 import RecoveryPassword from '../pages/RecoveryPassword';
@@ -19,7 +19,7 @@ const App = () => {
     const initialState = useInitialState();
     return (
         <AppContext.Provider value={initialState}>
-            <BrowserRouter>
+            <HasRouter>
                 <Layout>
                     <Routes>
                         <Route exact path="/" element={<Home />} />
@@ -34,7 +34,7 @@ const App = () => {
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Layout>
-            </BrowserRouter>
+            </HasRouter>
         </AppContext.Provider>
     );
 }
