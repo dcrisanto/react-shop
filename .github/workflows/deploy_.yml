@@ -1,5 +1,5 @@
-name: Build and Deploy # nombre del trabajo que se va a ejecutar
-on: [push] # donde: cuando se realice un push
+name: Build and Deploy # nombre del trabajo que se va a ejecutar.
+on: [push] # donde: cuando se realice un push.
 permissions:
   contents: write
 jobs:
