@@ -6,8 +6,6 @@ import ProductList from '@containers/ProductList';
 const Home = () => {
     return (
         <div>
-            <Headers />
-            <Search />
             <ProductList />
         </div>
     );
